@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% if title %}  <!-- jinja template engine syntax (if/else) -->
+        <title>Flask Blog - {{ title }}</title>
+    {% else %}
+        <title><h2>Welcome, stranger.</h2></title>
+    {% endif %}
+</head>
+
+<body>
+    {% for post in posts %}  <!-- jinja template engine syntax (for loop) -->
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{post.content}}</p>
+    {% endfor %}
+</body>
+
+<footer>
+    <h5>Covax84. No single right reserved.</h5>
+</footer>
+
+</html>

@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    {% if title %}  <!-- jinja template engine syntax (if/else) -->
-        <title>Flask Blog - {{ title }}</title>
-    {% else %}
-        <title><h2>About page(default)</h2></title>
-    {% endif %}
-</head>
-
-<body>
+{% extends "layout.html" %}
+{% block content %}
     <h1>About Page</h1>
-</body>
-<footer>
-    <h5>Covax84. No single right reserved.</h5>
-</footer>
-
-</html>
+{% endblock content %}

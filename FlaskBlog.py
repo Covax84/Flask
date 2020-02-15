@@ -4,7 +4,7 @@
 # export FLASK_DEBUG=1  - run flask in debug mode (changes take effect by simple refresh)
 # flask run  - to run server on localhost
 # python flaskblog.by  - same as flask run
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
